@@ -8,11 +8,13 @@
     <title>naive todo</title>
   </head>
   <body>
-    <div class="todos"></div>
-    <form>
-      <input />
+    <h1>TODO LIST</h1>
+    <form onsubmit="handleFormSubmit(); return false">
+      <input id="task-input" />
       <button>登録する</button>
     </form>
+    <ul id="todos"></ul>
+
     <script src="index.js"></script>
   </body>
 </html>
